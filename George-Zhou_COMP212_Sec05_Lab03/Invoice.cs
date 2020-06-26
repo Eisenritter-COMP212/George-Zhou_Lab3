@@ -23,6 +23,6 @@ namespace George_Zhou_COMP212_Sec05_Lab03
             Price = price;
         }
 
-       public override string ToString() => $"{PartNumber,-10}{PartDescription,-20}{Quantity,-10}{Price.ToString(),-10:C}";
+       public override string ToString() => $"{PartNumber,-10}{PartDescription,-20}{Quantity,-10}{Price,-10:C}";
     }
 }

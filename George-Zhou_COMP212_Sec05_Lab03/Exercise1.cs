@@ -23,21 +23,48 @@ namespace George_Zhou_COMP212_Sec05_Lab03
 
             };
 
-            // LINQ
+            // LINQ Query 1A
+            try { 
             var InvoiceTotal =
                 from i in invoices
                 orderby i.Quantity * i.Price
                 select new { Invoice = i, InvoiceTotal = i.Quantity * i.Price };
-
             Console.WriteLine($"{"Part #",-10}{"Part Description",-20}{"Quantity",-10}{"Price",-10}{"Invoice Total",-10}");
-            
-            foreach (var i in InvoiceTotal)
-            {
-                Console.WriteLine(i.Invoice.ToString()+i.InvoiceTotal);
+
+                // Display Exercise 1A Result
+                foreach (var i in InvoiceTotal) { Console.WriteLine($"{i.Invoice}{i.InvoiceTotal:C}"); }
             }
-            
-            //InvoiceTotal.Display();
-   
+            catch(Exception e)
+            {
+
+            }
+
+            // LINQ Query 1B
+            try
+            {
+                int max = invoices.Max(i => i.Quantity);
+                var Maximum = invoices.First(x => x.Quantity == max);
+                // Display Exercise 1B Result
+                Console.WriteLine($"The invoices with the most quantity is {Maximum.PartDescription}");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            // LINQ Query 1C
+            try
+            {
+                var average = invoices.Average(x => x.Price);
+                Console.WriteLine($"The average price of the parts is {average:C}");                 
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
+
         }
     }
     // declares an extension method 
