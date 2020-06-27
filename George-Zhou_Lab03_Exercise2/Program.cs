@@ -16,7 +16,7 @@ namespace George_Zhou_Lab03_Exercise2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Exercise2());
         }
     }
 }

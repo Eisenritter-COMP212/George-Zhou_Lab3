@@ -1,6 +1,6 @@
 ﻿namespace George_Zhou_Lab03_Exercise2
 {
-    partial class Form1
+    partial class Exercise2
     {
         /// <summary>
         /// Required designer variable.
@@ -102,6 +102,7 @@
             this.buttonCalculateFac.TabIndex = 2;
             this.buttonCalculateFac.Text = "Calculate";
             this.buttonCalculateFac.UseVisualStyleBackColor = true;
+            this.buttonCalculateFac.Click += new System.EventHandler(this.buttonCalculateFac_Click);
             // 
             // tBoxResultFac
             // 
@@ -174,6 +175,7 @@
             this.btnCalcInterest.TabIndex = 7;
             this.btnCalcInterest.Text = "Calculate Interest";
             this.btnCalcInterest.UseVisualStyleBackColor = true;
+            this.btnCalcInterest.Click += new System.EventHandler(this.btnCalcInterest_Click);
             // 
             // tbxIntResult
             // 
@@ -184,14 +186,14 @@
             this.tbxIntResult.TabIndex = 8;
             this.tbxIntResult.Text = "Interest is:";
             // 
-            // Form1
+            // Exercise2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1196, 447);
             this.Controls.Add(this.GBoxCLC);
             this.Controls.Add(this.gBoxCalcAsync);
-            this.Name = "Form1";
+            this.Name = "Exercise2";
             this.Text = "Asynchronous Programming";
             this.gBoxCalcAsync.ResumeLayout(false);
             this.gBoxCalcAsync.PerformLayout();

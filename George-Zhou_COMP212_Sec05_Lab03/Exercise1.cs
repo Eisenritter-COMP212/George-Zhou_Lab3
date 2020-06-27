@@ -27,7 +27,8 @@ namespace George_Zhou_COMP212_Sec05_Lab03
             try { 
             var InvoiceTotal =
                 from i in invoices
-                orderby i.Quantity * i.Price
+                let invoiceTotal = i.Quantity * i.Price
+                orderby invoiceTotal
                 select new { Invoice = i, InvoiceTotal = i.Quantity * i.Price };
             Console.WriteLine($"{"Part #",-10}{"Part Description",-20}{"Quantity",-10}{"Price",-10}{"Invoice Total",-10}");
 
