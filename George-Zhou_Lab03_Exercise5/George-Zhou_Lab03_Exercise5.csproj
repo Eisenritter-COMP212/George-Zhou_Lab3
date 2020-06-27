@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4FA35194-8C82-4D46-804F-DB87B2A68A19}</ProjectGuid>
+    <ProjectGuid>{DA749A29-AD2C-403F-80B8-BC84209A0017}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>George_Zhou_Lab03_Exercise4</RootNamespace>
-    <AssemblyName>George-Zhou_Lab03_Exercise4</AssemblyName>
+    <RootNamespace>George_Zhou_Lab03_Exercise5</RootNamespace>
+    <AssemblyName>George-Zhou_Lab03_Exercise5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercise4.cs" />
+    <Compile Include="Exercise5.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

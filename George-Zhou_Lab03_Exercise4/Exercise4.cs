@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace George_Zhou_Lab03_Exercise4
 {
-    class Program
+    class Exercise4
     {
         static void Main(string[] args)
         {
